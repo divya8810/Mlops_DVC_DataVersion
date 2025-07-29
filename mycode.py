@@ -8,7 +8,8 @@ data={"name":['a','b','c'],
 df=pd.DataFrame(data)
 new_row={'name':'GINI','Age':20,'city':'agra'}
 df.loc[len(df.index)]=new_row
-
+new_row2={'name':'GINI2','Age':20,'city':'agra'}
+df.loc[len(df.index)]=new_row2
 
 data_dir='data'
 os.makedirs(data_dir,exist_ok=True)
